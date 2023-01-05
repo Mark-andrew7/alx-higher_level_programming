@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 for n in range(1, 101):
     if n % 3 == 0 and n % 5 == 0:
-        print("FizzBuzz", end="")
+        print("FizzBuzz ", end="")
     elif n % 3 == 0:
-        print("Fizz", end="")
+        print("Fizz ", end="")
     elif n % 5 == 0:
-        print("Buzz", end="")
+        print("Buzz ", end="")
     else:
-        print("{:02d}".format(n), end="")
+        print("{}".format(n), end="")
