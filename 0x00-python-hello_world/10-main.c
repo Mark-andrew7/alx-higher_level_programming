@@ -6,7 +6,7 @@
  * main - check the code
  * Return: Always 0
  */
-int main(void);
+int main(void)
 {
 listint_t *head;
 listint_t *current;
@@ -24,19 +24,26 @@ add_nodeint(&head, 402);
 add_nodeint(&head, 1024);
 print_listint(head);
 
-if(check_cycle(head) == 0)
+if (check_cycle(head) == 0)
 printf("Linked list has no cycle\n");
-else if(check_cycle(head == 1)
+else if(check_cycle(head) == 1)
 printf("Linked list has a cycle\n");
 
-current == head;
+current = head;
 for (i = 0; i < 4; i++)
 current = current->next;
 temp = current->next;
 current->next = head;
 
-if(check_cycle(head) == 0)
+if (check_cycle(head) == 0)
 printf("Linked list has no cycle\n");
-else if(check_cycle(head) == 1)
+else if (check_cycle(head) == 1)
 printf("Linked list has a cycle\n");
 
+current = head;
+for (i = 0; i < 4; i++)
+current = current->next;
+current->next = temp;
+free_listint(head);
+return (0);
+}
