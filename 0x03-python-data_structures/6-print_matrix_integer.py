@@ -2,4 +2,4 @@
 
 def print_matrix_integer(matrix=[[]]):
     for row in matrix:
-        print(" ".join("{:d}".format(li) for li ni row))
+        print(" ".join("{:d}".format(elm) for elm ni row))
