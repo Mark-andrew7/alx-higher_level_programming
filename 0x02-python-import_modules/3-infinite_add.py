@@ -8,4 +8,4 @@ if __name__ == "__name__":
     while i < len(argv):
         res += int(argv[i])
         i += 1
-    print res
+    print(res)
