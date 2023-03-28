@@ -4,7 +4,7 @@ no module imported
 """
 
 
-class square:
+class Square:
     """
     define an empty class
     """
