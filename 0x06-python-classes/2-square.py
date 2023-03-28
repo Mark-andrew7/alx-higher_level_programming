@@ -15,7 +15,7 @@ class Square:
         self.__size = size
 
     try:
-        size == integer
+        assert type(size) == int
     except TypeError:
         print("size must be an integer")
     if size < 0:
