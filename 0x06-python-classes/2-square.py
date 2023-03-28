@@ -11,6 +11,8 @@ class Square:
     def __init__(self, size=0):
         """
         initialize instance with optional size
+        parameter
+
         """
         self.__size = size
 
