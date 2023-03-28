@@ -1,13 +1,12 @@
 #!/usr/bin/python3
 """
-no module accepted
+no module imported
 """
 
 
 class square:
     """
-    define a class square with private,
-    instance attribute
+    define a class square with private instance attribute
     """
     def __init__(self, size):
         """
