@@ -6,7 +6,7 @@ no module imported
 
 class square:
     """
-    define a class square with private instance attribute
+    define a square with private instance attribute
     """
     def __init__(self, size):
         """
