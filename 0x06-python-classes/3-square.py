@@ -8,7 +8,7 @@ class Square:
     """
     define a class
     """
-    def __init__(self, size=0)
+    def __init__(self, size=0):
     """
     initializes an optional instance size
 
