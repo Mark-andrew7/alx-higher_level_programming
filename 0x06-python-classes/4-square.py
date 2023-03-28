@@ -6,7 +6,7 @@ no module imported
 
 class Square:
     """
-    defines a class
+    defines a square with private instant attribute
     """
     def __init__(self, size=0):
         """
@@ -17,14 +17,14 @@ class Square:
     @property
     def size(self):
         """
-        method that retrieves attribute
+        method that retrieves a private attribute
         """
         return self.__size
 
     @size.setter
     def size(self, value):
         """
-        method that sets attribute
+        method that sets a private attribute
         """
         self.__size = value
     if type(size) != int:
