@@ -12,6 +12,7 @@ class square:
     def __init__(self, size):
         """
         Initializes size instance
-        """
 
+        size: no type/value verification
+        """
         self.__size = size
