@@ -4,7 +4,7 @@ no module imported
 """
 
 
-class square:
+class Square:
     """
     define a square with private instance attribute
     """
