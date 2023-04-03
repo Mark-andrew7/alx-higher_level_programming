@@ -1,0 +1,30 @@
+  =====================
+  Tests to implement an addition function
+
+  ``add_integer()`` function adds two integers together
+  The function add_integer() uses the '+' operator
+
+	>>> add_integer = __import__("0-add_integer").add_integer
+	>>> add_integer(20, 30)
+	50
+
+	>>> add_integer("string", 50)
+	Traceback (most recent call last):
+		...
+	TypeError: a must be an integer
+
+	>>> add_integer(10, "school")
+	Traceback (most recent call last):
+		...
+	TypeError: b must be an integer
+
+  if float, digit should be casted into an integer
+	>>> add_integer(5.1, 5.1)
+	10
+
+	>>> add_integer(10.5, 10)
+	20
+
+  both negative and positive integers can be added
+	>>> add_integer(-5, 10)
+	5
