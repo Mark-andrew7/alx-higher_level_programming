@@ -11,7 +11,6 @@ class Rectangle:
     def __init__(self, width=0, height=0):
         """
         initialize parameters with optional instance
-
         width: private instance attribute
         height: private instance attribute
         """
@@ -66,14 +65,11 @@ class Rectangle:
         """
         if self.__width == 0 or self.__height == 0:
             return 0
-        return 2 * (self.width + self.__height)
+        return 2 * (self.__width * self.__height)
 
     def __str__(self):
         """
-        string representation of rectangle with character #
+        print rectangle with character #
         """
         if self.__width == 0 or self.__height == 0:
             return ""
-        for x in range(self.__width):
-            for j in range(self.__height):
-                print("#", end="")
