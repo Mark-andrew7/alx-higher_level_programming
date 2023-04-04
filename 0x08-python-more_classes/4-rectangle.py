@@ -75,7 +75,7 @@ class Rectangle:
             return ""
         new_s = ""
         for x in range(self.__height):
-            for j in range(self.__weight):
+            for j in range(self.__width):
                 new_s += "#"
             new_s += "\n"
         return new_s.rstrip
