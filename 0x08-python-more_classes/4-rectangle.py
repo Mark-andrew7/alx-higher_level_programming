@@ -78,7 +78,7 @@ class Rectangle:
             for j in range(self.__width):
                 new_s += "#"
             new_s += "\n"
-        return new_s.rstrip
+        return new_s.rstrip()
 
     def __repr__(self):
         """
