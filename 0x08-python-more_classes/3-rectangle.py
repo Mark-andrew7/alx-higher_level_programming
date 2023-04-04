@@ -75,8 +75,8 @@ class Rectangle:
         if self.__width == 0 or self.__height == 0:
             return ""
         new_s = ""
-        for x in range(self.__width):
-            for j in range(self.__height):
+        for x in range(self.__height):
+            for j in range(self.__width):
                 new_s += "#"
             new_s += "\n"
         return new_s.rstrip()
