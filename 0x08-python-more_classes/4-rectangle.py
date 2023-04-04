@@ -78,6 +78,7 @@ class Rectangle:
             for j in range(self.__height):
                 new_s += "#"
             new_s += "\n"
+        return new_s
 
     def __repr__(self):
         """
