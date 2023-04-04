@@ -74,6 +74,8 @@ class Rectangle:
         """
         if self.__width == 0 or self.__height == 0:
             return ""
+        new_s = ""
         for x in range(self.__width):
             for j in range(self.__height):
-                print("#", end="")
+                new_s += "#"
+            new_s += "\n"
