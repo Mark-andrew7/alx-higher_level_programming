@@ -73,3 +73,21 @@ class Rectangle:
         """
         if self.__width == 0 or self.__height == 0:
             return ""
+    new_s = ""
+    for x in range(self.__height):
+        for y in range(self.__width):
+            new_s += "#"
+        new_s += "\n"
+    return new_s.rstrip()
+
+    def __repr__(self):
+        """
+        return string representation of rectangle
+        """
+        return "Rectangle({:d}, {:d})".format(self.__width, self.__height)
+
+    def __del__(self):
+        """
+        deletes an instance of Rectangle
+        """
+        print("Bye rectangle...")
