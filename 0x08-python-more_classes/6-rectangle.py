@@ -83,3 +83,16 @@ class Rectangle:
                 new_s += "#"
             new_s += "\n"
         return new_s.rstrip()
+
+    def __repr__(self):
+        """
+        return string representation of rectangle
+        """
+        return "Rectangle({:d}, {:d})".format(self.__width, self.__height)
+
+    def __del__(self):
+        """
+        delete instance of rectangle
+        """
+        Rectangle.number_of_instances -= 1
+        print("Bye rectangle...")
