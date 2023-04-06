@@ -21,3 +21,5 @@
 
 	>>> say_my_name("mark")
 	My name is mark
+
+	raise exception if empty string occurs
