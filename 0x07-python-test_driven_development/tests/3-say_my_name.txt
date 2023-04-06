@@ -1,0 +1,23 @@
+  =====================
+  This is a test that implements the ``say_my_name`` function
+
+  ``say_my_name``` prints the first and last name``
+
+	>>> say_my_name = __import__("3-say_my_name").say_my_name
+	>>> say_my_name("Mark", "Andrew")
+	My name is Mark Andrew
+
+	raises a TypeError if first_name is not a string
+	>>> say_my_name(50, "cent")
+	Traceback (most recent call last):
+		...
+	TypeError: first_name must be a string
+
+	raises a TypeError if last_name is not a string
+	>>> say_my_name("kai", 29)
+	Traceback (most recent call last):
+		...
+	TypeError: last_name must be a string
+
+	>>> say_my_name("mark")
+	My name is mark
