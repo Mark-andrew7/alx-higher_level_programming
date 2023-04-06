@@ -1,0 +1,31 @@
+  ==============================================
+  Test to implement a ``print_square`` function
+
+  ``print_square()`` function prints a square with the character #
+  size is the length of the square
+
+	>>> print_square = __import__("4-print_square").print_square
+	>>> print_square(5)
+	#####
+	#####
+	#####
+	#####
+	#####
+
+	Exception error if size is not an integer
+	>>> print_square("units")
+	Traceback (most recent call last):
+		...
+	TypeError: size must be an integer
+
+	Exception error if size is less than zero
+	>>> print_square(-5)
+	Traceback (most recent call last):
+		...
+	ValueError: size must be >= 0
+
+	if float and less than 0
+	>>> print_square(-0.5)
+	Traceback (most recent call last):
+		...
+	TypeError: size must be an integer
