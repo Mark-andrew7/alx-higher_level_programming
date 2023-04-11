@@ -25,7 +25,6 @@ class BaseGeometry:
             raise ValueError("{} must be greater than 0".format(name))
 
 
-
 class Rectangle(BaseGeometry):
     """
     rectangle class that inherits
@@ -44,10 +43,10 @@ class Rectangle(BaseGeometry):
         """
         implementation of area method
         """
-        self.__width * self__height
+        return self.__width * self__height
 
     def __str__(self):
         """
         return rectangle description
         """
-        print("[Rectangle] {}/{}".format(self.__width, self.__height))
+        return "[Rectangle] {}/{}".format(self.__width, self.__height))
