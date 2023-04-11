@@ -22,4 +22,4 @@
 	>>> my_list.print_sorted()
 	Traceback (most recent call last):
 		...
-	TypeError: strings together with integers
+	TypeError: '<' not supported between instances of 'str' and 'int'
