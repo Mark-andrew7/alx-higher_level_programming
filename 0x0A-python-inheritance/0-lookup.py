@@ -7,6 +7,6 @@ no modules imported
 def lookup(obj):
     """
     returns list of available attributes
+    and methods
     """
-    for i in obj:
-        return dir(i)
+    return dir(obj)
