@@ -49,4 +49,4 @@ class Rectangle(BaseGeometry):
         """
         return rectangle description
         """
-        return "[Rectangle] {}/{}".format(self.__width, self.__height))
+        return "[Rectangle] {}/{}".format(self.__width, self.__height)
