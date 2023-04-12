@@ -4,7 +4,7 @@ no modules imported
 """
 
 
-def class_to_obj(obj):
+def class_to_json(obj):
     """
     returns dictionary description with
     simple data structure list
