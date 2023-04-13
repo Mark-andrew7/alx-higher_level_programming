@@ -23,5 +23,5 @@ class Square(Rectangle):
         """
         implementation of area
         """
-        super().__init__(self, self)
+        super().__init__(self.__size, self.__size)
         return self.__width * self.__height
