@@ -44,7 +44,7 @@ class Rectangle(BaseGeometry):
         """
         implementation of area method
         """
-        return self.__width * self__height
+        return self.__width * self.__height
 
     def __str__(self):
         """
