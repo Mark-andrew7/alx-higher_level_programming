@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-import class
+inheritance
 """
 Rectangle = __import__("9-rectangle").Rectangle
 
