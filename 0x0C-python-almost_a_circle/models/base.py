@@ -36,7 +36,7 @@ class Base:
         """
         JSON string to file
         """
-        fileName = class.__name__ + 'json'
+        fileName = cls.__name__ + 'json'
         with open(fileName, 'w', encoding="utf-8") as f:
             if list_objs is None:
                 f.write('[]')
