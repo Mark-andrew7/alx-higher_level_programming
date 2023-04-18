@@ -13,7 +13,7 @@ class Square(Rectangle):
         """
         initialization
         """
-        super().__init__(id, x, y, size, size)
+        super().__init__(size, size, x, y, id)
 
     def __str__(self):
         """
@@ -34,7 +34,7 @@ class Square(Rectangle):
     @size.setter
     def size(self, value):
         """
-        setter metho
+        setter method
         """
         self.width = value
         self.height = value
