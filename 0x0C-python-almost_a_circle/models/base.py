@@ -41,6 +41,6 @@ class Base:
             if list_objs is None:
                 f.write('[]')
             else:
-            list_objs = [y.to_dictionary() for y in list_objs]
-            string = cls.to_json_string(list_objs)
-            f.write(string)
+                list_objs = [y.to_dictionary() for y in list_objs]
+                string = cls.to_json_string(list_objs)
+                f.write(string)
