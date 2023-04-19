@@ -28,3 +28,17 @@
   both negative and positive integers can be added
 	>>> add_integer(-5, 10)
 	5
+
+	>>> add_integer(float('Nan'))
+	Traceback (most recent call last):
+		...
+	ValueError: cannot convert float NaN to integer
+
+  Missing one argument
+	>>> add_integer(1)
+	99
+
+	>>> add_integer()
+	Traceback (most recent call last):
+		...
+	TypeError: add_integer() missing 1 required positional argument: 'a'
