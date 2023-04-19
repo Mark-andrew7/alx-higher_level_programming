@@ -81,7 +81,7 @@ class Rectangle:
         new_s = ""
         for x in range(self.__height):
             for j in range(self.__width):
-                new_s += self.print_symbol
+                new_s += str(self.print_symbol)
             new_s += "\n"
         return new_s.rstrip()
 
