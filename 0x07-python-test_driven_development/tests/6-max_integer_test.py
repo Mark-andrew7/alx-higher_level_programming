@@ -47,3 +47,9 @@ class TestMaxInteger(unittest.TestCase):
         test where one negative is in a list
         """
         self.assertEqual(max_integer([-1, 2, 4, 6]), 6)
+
+    def test_max_in_the_middle(self):
+        """
+        test case for max int in middle
+        """
+        self.assertEqual(max_integer([2, 4, 10, 6, 8]), 10)
