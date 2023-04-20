@@ -45,7 +45,6 @@ class Base:
                 string = cls.to_json_string(list_objs)
                 f.write(string)
 
-    @staticmethod
     def from_json_string(json_string):
         """
         return list of JSON string rep
