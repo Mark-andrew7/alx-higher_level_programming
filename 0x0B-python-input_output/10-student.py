@@ -22,6 +22,6 @@ class Student:
 
         attrs: optional argument
         """
-        if type(attrs) == list(str):
+        if type(attrs) == list(str()):
             return {k: getattr(self, k) for k in attrs}
         return self.__dict__
