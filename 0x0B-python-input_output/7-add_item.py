@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-import json module
+Load, add arguments and save them to a file.
 """
 import sys
 
@@ -15,4 +15,4 @@ if __name__ == "__main__":
     except FileNotFoundError:
         original_list = []
     original_list.extend(sys.argv[1:])
-    save_to_json_file(original_list, "add_item.json"
+    save_to_json_file(original_list, "add_item.json")
