@@ -10,7 +10,7 @@ if __name__ == "__main__":
         __import__('6-load_from_json_file').load_from_json_file
 
     try:
-        original_list = load_from_json_file(add_item.json)
+        original_list = load_from_json_file("add_item.json")
     except FileNotFoundError:
         original_list = []
     original_list.extend(sys.argv[1:])
