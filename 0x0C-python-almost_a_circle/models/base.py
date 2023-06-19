@@ -50,5 +50,5 @@ class Base:
         return list of JSON string rep
         """
         if json_string is None:
-            return "[]"
+            return []
         return json.loads(json_string)
