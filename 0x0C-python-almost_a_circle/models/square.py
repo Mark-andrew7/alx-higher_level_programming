@@ -29,7 +29,7 @@ class Square(Rectangle):
         """
         getter method
         """
-        return self.size
+        return self.width
 
     @size.setter
     def size(self, value):
