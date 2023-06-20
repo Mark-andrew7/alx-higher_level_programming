@@ -108,6 +108,8 @@ class Rectangle(Base):
                 print("#", end="")
             print()
 
+    def update(self, *args, **kwargs):
+
     def __str__(self):
         """str method to return rectangle representation"""
         return '[Rectangle] ({}) {}/{} - {}/{}'.format(self.id,
