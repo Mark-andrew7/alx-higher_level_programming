@@ -41,7 +41,7 @@ class Square(Rectangle):
 
     def update(self, *args, **kwargs):
         """
-        Assigns attributes
+        method that assigns attributes
         """
         if args:
             if len(args) >= 1:
