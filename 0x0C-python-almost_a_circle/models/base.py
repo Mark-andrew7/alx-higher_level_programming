@@ -61,10 +61,9 @@ class Base:
         from models.rectangle import Rectangle
         from models.square import Square
 
-        if cls.__name__ = Rectangle:
+        if cls.__name__ == Rectangle:
             r1 = Rectangle(4, 6)
-        elif cls.__name__ = Square:
+        elif cls.__name__ == Square:
             r1 = Square(7)
-
         r1.update(**dictionary)
         return r1
