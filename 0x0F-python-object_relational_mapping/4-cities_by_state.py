@@ -16,7 +16,8 @@ if __name__ == "__main__":
     )
 
     cur = db.cursor()
-    cur.execute('SELECT * FROM cities ORDER BY id ASC')
+    cur.execute('SELECT cit.id, cit.name, sta.name FROM cities AS cit \
+                LEFT JOIN states AS sta ON cit.state_id=sta.id')
 
     rows = cur.fetchall()
     for row in rows:
