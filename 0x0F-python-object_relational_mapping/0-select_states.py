@@ -23,4 +23,4 @@ if __name__ == "__main__":
         print(row)
 
     cur.close()
-    rows.close()
+    db.close()
