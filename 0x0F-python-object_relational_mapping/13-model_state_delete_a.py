@@ -14,5 +14,6 @@ if __name__ == "__main__":
                            .format(argv[1], argv[2], argv[3]))
     Session = sessionmaker(bind=engine)
     session = Session()
-    del_state = session.query(State).filter_by(name='a').delete()
+    for inst in session.query(State).filter(State.name.like('%a%')):
+        session.delete(inst)
     session.commit()
