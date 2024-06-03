@@ -69,7 +69,7 @@ return (head1 == NULL && head2 == NULL);
  */
 int is_palindrome(listint_t **head)
 {
-listint_t *middle, *second_half, *reversed_second_half;
+listint_t *middle, *reversed_second_half;
 int result;
 
 if (head == NULL || *head == NULL)
