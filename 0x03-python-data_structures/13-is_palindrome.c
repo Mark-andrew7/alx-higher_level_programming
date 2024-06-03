@@ -76,4 +76,7 @@ if (head == NULL || *head == NULL)
 return (1);
 
 middle = find_middle(*head);
-second_half = middle;
+reversed_second_half = reverse_list(middle);
+result = compare_lists(*head, reversed_second_half);    
+return (result);
+}
